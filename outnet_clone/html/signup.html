@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="../stylesheets/signup.css">
+    <link rel="stylesheet" href="../stylesheets/footer.css">
+    <link rel="stylesheet" href="../stylesheets/navbar.css">
+    
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+
+
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="SignUp">
+        <div id="SignUP_Form">
+            <div><p>Welcome</p></div>
+            <div>
+                <p>Email Address</p>
+                <input type="email" id="Email" required>
+            </div>
+
+            <div id="Confirm">
+
+                <label class="Confirmation">I'm already registered
+                    <input type="radio" name="radio" checked="checked" onclick="format(event)">
+                    <span class="Check"></span>
+                </label>
+                  
+                <label class="Confirmation">I'm new to THE OUTNET
+                    <input type="radio" name="radio" onclick="RegisterNow(event)">
+                    <span class="Check"></span>
+                </label>
+
+
+            </div>
+
+            <div id="Pass">
+                <p>Password</p>
+                <input type="password" id="Password" required>
+
+                <input type="text" id="description">
+                <input type="text" id="mobile">
+                
+            </div>
+            <p id="Pass_description"></p>
+
+
+            <div id="first_name"></div>
+
+
+            <div id="last_name"></div>
+
+
+            <div id="Subscription"></div>
+
+
+
+            <div id="Sign_in_button" onclick="SignUp_Register(this)">
+                <p>Sign In</p>
+            </div>
+
+            <p>Fogot your password?</p>
+
+        </div>
+        
+    </div>
+    <br><br>
+    <hr id="silverlining">
+
+    <div id="footer"></div>
+
+
+</body>
+</html>
+
+
+<script src="../js_files/signup.js"></script>
+
+<script src="../js_files/navbar.js"></script>
+
+<script src="../js_files/footer.js"></script>
